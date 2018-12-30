@@ -40,7 +40,7 @@ class Meal: NSObject, NSCoding {
         }
         
         //The rating must be between 0 and 5 inclusively
-        guard (rating >= 0) && (rating <= 5) else {
+        guard rating >= 0 && rating <= 5 else {
             return nil
         }
         
